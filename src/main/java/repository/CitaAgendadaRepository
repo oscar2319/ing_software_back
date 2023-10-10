@@ -1,2 +1,9 @@
 public interface CitaAgendadaRepository extends JpaRepository<CitaAgendada, Long> {
+    
+    CitaAgendada save(CitaAgendada cita);
+
+    List<CitaAgendada> findAll();
+
+    void deleteById(Long id);
+
 }
